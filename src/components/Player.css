@@ -1,0 +1,188 @@
+/* Player.css or your preferred CSS file */
+
+.music-ProgressBar {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 8px;
+  border-radius: 4px;
+  background-color: #FFFFFF14; /* Background color of the progress bar */
+  position: relative; /* Ensure positioning context */
+  outline: none;
+  cursor: default; /* Disable pointer cursor */
+}
+
+.music-ProgressBar::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8px;
+  background: linear-gradient(to right, white calc(var(--value) / var(--max) * 100%), transparent 0); /* White gradient fill from left to right */
+  border-radius: 4px;
+}
+
+.music-ProgressBar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 0; /* Set width to 0 to hide the default thumb */
+  height: 0; /* Set height to 0 to hide the default thumb */
+  border: none; /* Remove any border */
+  background: none; /* Remove any background */
+  cursor: none; /* Disable cursor for the thumb area */
+}
+
+.music-ProgressBar::-webkit-slider-thumb::before {
+  content: '';
+  position: absolute;
+  width: calc((100% - 16px) * (var(--value) / var(--max)));
+  height: 8px;
+  background-color: white; /* Fill color for the progress */
+  border-radius: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: -1; /* Ensure it's behind the thumb */
+}
+
+.music-ProgressBar:focus {
+  outline: none;
+}
+
+.music-ProgressBar::-moz-range-track {
+  width: 100%;
+  height: 8px;
+  background: linear-gradient(to right, white calc(var(--value) / var(--max) * 100%), transparent 0); /* White gradient fill from left to right */
+  border-radius: 4px;
+}
+
+.music-ProgressBar::-moz-range-thumb {
+  width: 0; /* Set width to 0 to hide the default thumb */
+  height: 0; /* Set height to 0 to hide the default thumb */
+  border: none; /* Remove any border */
+  background: none; /* Remove any background */
+  cursor: none; /* Disable cursor for the thumb area */
+}
+
+.music-ProgressBar::-ms-track {
+  width: 100%;
+  height: 8px;
+  background-color: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+.music-ProgressBar::-ms-fill-lower {
+  background: linear-gradient(to right, white calc(var(--value) / var(--max) * 100%), transparent 0); /* White gradient fill from left to right for lower fill in IE/Edge */
+}
+
+.music-ProgressBar::-ms-fill-upper {
+  background-color: #2d3748; /* Upper fill color for IE/Edge */
+}
+
+.music-ProgressBar::-ms-thumb {
+  width: 0; /* Set width to 0 to hide the default thumb */
+  height: 0; /* Set height to 0 to hide the default thumb */
+  border: none; /* Remove any border */
+  background: none; /* Remove any background */
+  cursor: none; /* Disable cursor for the thumb area */
+}
+
+
+  /* Example styles for Player.css */
+button.text-white {
+    color: white;
+  }
+  
+  button.text-gray-500 {
+    color: #999999; /* Adjust the lighter text color as per your design */
+  }
+  
+.custom-css-Searchbar{
+  transition: 0.3s;
+  background: linear-gradient(108.18deg, #201606 2.46%, #000000 99.84%);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+ }
+
+  .hover\:custom-css-Searchbar:hover{
+    transition: 0.4s;
+    background: linear-gradient(152deg, rgba(28,20,6,1) 0%, rgba(36,29,16,1) 0%, rgba(37,30,18,1) 0%, rgba(38,31,19,1) 0%, rgba(38,32,20,1) 0%, rgba(38,32,20,1) 0%, rgba(39,33,21,1) 0%, rgba(39,33,21,1) 0%, rgba(39,33,21,1) 0%, rgba(39,33,21,1) 0%, rgba(41,35,23,1) 87%, rgba(41,35,23,1) 99%, rgba(41,35,23,1) 100%, rgba(41,35,23,1) 100%);
+    }
+
+.serchbox{
+  transition: 0.4s;
+    background: linear-gradient(152deg, rgba(28,20,6,1) 0%, rgba(36,29,16,1) 0%, rgba(37,30,18,1) 0%, rgba(38,31,19,1) 0%, rgba(38,32,20,1) 0%, rgba(38,32,20,1) 0%, rgba(39,33,21,1) 0%, rgba(39,33,21,1) 0%, rgba(39,33,21,1) 0%, rgba(39,33,21,1) 0%, rgba(41,35,23,1) 87%, rgba(41,35,23,1) 99%, rgba(41,35,23,1) 100%, rgba(41,35,23,1) 100%);
+}
+
+.hover\:serchbox:hover {
+  background-color:rgb(172, 133, 60);
+}
+
+.custom-css-SongItem{
+  transition: 0.4s;
+    background: linear-gradient(152deg, rgba(28,20,6,1) 0%, rgba(36,29,16,1) 0%, rgba(37,30,18,1) 0%, rgba(38,31,19,1) 0%, rgba(38,32,20,1) 0%, rgba(38,32,20,1) 0%, rgba(39,33,21,1) 0%, rgba(39,33,21,1) 0%, rgba(39,33,21,1) 0%, rgba(39,33,21,1) 0%, rgba(41,35,23,1) 87%, rgba(41,35,23,1) 99%, rgba(41,35,23,1) 100%, rgba(41,35,23,1) 100%);
+}
+
+.hover\:custom-css-SongItem:hover{
+  transition: 0.4s;
+  background: linear-gradient(152deg, rgba(28,20,6,1) 0%, rgba(36,29,16,1) 0%, rgba(37,30,18,1) 0%, rgba(38,31,19,1) 0%, rgba(38,32,20,1) 0%, rgba(38,32,20,1) 0%, rgba(39,33,21,1) 0%, rgba(39,33,21,1) 0%, rgba(39,33,21,1) 0%, rgba(39,33,21,1) 0%, rgba(41,35,23,1) 87%, rgba(41,35,23,1) 99%, rgba(41,35,23,1) 100%, rgba(41,35,23,1) 100%);
+  }
+
+
+  .song-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .song-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .song-item.active {
+    background-color: #f0f0f0;
+  }
+  
+  .song-duration {
+    font-size: 0.8em;
+    color: #888;
+  }
+  
+
+
+  /* Player.css */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup-content {
+  background-color: #333; /* Dark background color */
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  max-width: 300px; /* Adjust width as needed */
+}
+
+.popup-content button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 8px 12px;
+  margin: 5px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.popup-content button:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Lighten background on hover */
+}
